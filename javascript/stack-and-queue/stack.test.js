@@ -9,7 +9,8 @@ describe('stack',()=>{
     });
 
     it('return null on empty Stack', () => {
-        expect(stack.peek()).toBeNull(true);
+      stack.push(10);
+        expect(stack.peek()).toBeTruthy();
       });
 
     it('Creates an instance of Stack', () => {
@@ -41,13 +42,10 @@ describe('stack',()=>{
     //   });
       describe('pop', () => {
         it('add items to the top of the stack', () => {
-          stack.push(1);
-          stack.push(2);
-          stack.push(3);
-          expect(stack.pop()).toEqual(3);
-          expect(stack.pop()).toEqual(2);
-          expect(stack.pop()).toEqual(1);
-          expect(stack.peek()).toBeNull();
+          stack.pop();
+          stack.pop();
+          expect(stack.top).toBeNull();
+          expect(stack.isEmpty()).toEqual(true);
         });
-      });
+       });
     });

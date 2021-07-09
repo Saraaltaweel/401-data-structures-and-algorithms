@@ -32,13 +32,18 @@ class Stack{
     pop(){
         let newPop=this.top;
         this.top=this.top.next;
-        newPop.pointer=null;
-        return this;  
+        newPop.pointer(null);
+        // return this;  
 
     }
 
     peek(){
-        return this.top.val;
+        if(this.isEmpty()){
+            return 'is empty';
+        }
+        else{
+            return this.top.val;
     }
+}
 }
 module.exports= Stack , Node;
