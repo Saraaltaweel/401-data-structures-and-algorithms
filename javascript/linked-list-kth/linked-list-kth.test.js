@@ -6,7 +6,7 @@ let val1=1;
 let val2=2;
 let val3=3;
 let val4=4;
-let newll= new linkedList();
+let newll= new LinkedList();
 describe('test the linked list',()=>{
     it('Where k is greater than the length of the linked list',()=>{
         newll.append(val1);
