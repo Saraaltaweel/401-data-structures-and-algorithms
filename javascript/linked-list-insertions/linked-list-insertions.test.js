@@ -15,15 +15,16 @@ describe('test linked list',()=>{
     it('insert more nodes',()=>{
         newll.append(2);
         newll.append(3);
-        expect(newll.head.value).toEqual(2);
-        expect(newll.head.next.value).toEqual(3);
+        expect(newll.head.value).toEqual(1);
+        // expect(newll.head.value).toEqual(2);
+        expect(newll.head.next.value).toEqual(2);
         
     })
     it('insert before',()=>{
         let current=newll.head;
         newll.insertBefore(current.value,4);
         let string=newll.toString();
-        expect(string).toEqual(`{${4}}->{${1}}->{${2}}->{${3}}->{null}`)
+        expect(string).toEqual(`{${4}}{${1}}{${2}}{${3}}{null}`)
     })
    
 
