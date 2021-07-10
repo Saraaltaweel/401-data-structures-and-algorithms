@@ -26,7 +26,7 @@ describe('queue',()=>{
       });
   });
     describe('pop', () => {
-       it('add items to the top of the stack', () => {
+       it('add items to the top of the queue', () => {
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
@@ -34,7 +34,7 @@ describe('queue',()=>{
         queue.dequeue();
         queue.dequeue();
 
-        expect(queue.peek()).toBeNull(null);
+        expect(queue.peek()).toEqual('is empty');
     });
    }); 
 });

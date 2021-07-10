@@ -1,7 +1,7 @@
 'use strict';
 
 class Node{
-    constructor(val,next){
+    constructor(val,next=null){
         this.val=val;
         this.next=next;
 
@@ -30,12 +30,13 @@ class Stack{
     }
 
     pop(){
-        let newPop=this.top;
-        this.top=this.top.next;
-        newPop.pointer(null);
-        // return this;  
-
-    }
+        if(this.isEmpty()){
+            return 'Exception';
+          }
+          let deleteItem = this.top.value;
+          this.top = this.top.next;
+          return deleteItem;
+        }
 
     peek(){
         if(this.isEmpty()){
