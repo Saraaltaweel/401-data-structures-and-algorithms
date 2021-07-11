@@ -3,7 +3,7 @@
 Create Pseudo class with two methods enqueue/dequeue, and use Stack methods to implement it
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](javascript/stack-queue-pseudo/queueWithStack.PNG)
+![](queueWithStack.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 O(n)
