@@ -10,7 +10,7 @@ Square Brackets : []
 Curly Brackets : {}
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](javascript/stack-queue-brackets/bracket.PNG)
+![](/stack-queue-brackets/bracket.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 O(n)
