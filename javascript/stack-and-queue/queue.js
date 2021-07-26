@@ -54,4 +54,8 @@ class Queue{
     }
 }
 
-module.exports= Queue , Node;
+module.exports={
+
+ Queue ,
+  Node,
+};
