@@ -15,4 +15,8 @@ it('should successfully return the Breadth first ', () => {
 
       expect(trees.breadthFirst()).toEqual([30,2,5,7,22])
     });
+    it('Edg Case ==> Tree empty',()=>{
+        let tree = new BinaryTree();
+        expect(tree.breadthFirst()).toEqual('Error The Tree is empty');
+      });
 });
