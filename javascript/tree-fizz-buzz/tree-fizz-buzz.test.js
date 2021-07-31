@@ -34,4 +34,8 @@ describe('Binary Tree', () => {
       expect(typeof fizzBuzzTree(kAry).arr[0].val).toEqual('string');  
       expect(typeof fizzBuzzTree(kAry).arr[5].val).toEqual('string');
     });
+    it('fizzBuzzTree function',()=>{
+      let newTree = new Tree();
+      expect(fizzBuzzTree(newTree)).toEqual('is empty');
+    });
   });
