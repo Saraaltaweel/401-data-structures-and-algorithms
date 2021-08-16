@@ -6,7 +6,7 @@ Return: string
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[](/ch31.PNG)
+[](hashmap-repeated-word\ch31.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 O(n)
